@@ -1,0 +1,27 @@
+<input type="text" placeholder="Search..." onkeyup="check(event)">
+<div>
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+</div>
+
+<button>Search</button>
+<script>
+    var enteredText = document.querySelector('input[type="text"]').value;
+    var container=document.querySelector('div');
+    var elements = container.querySelectorAll('h1');
+    console.log(elements);
+
+    function check(event)
+    {
+        enteredText = event.target.value;
+        for(var i=0;i<elements.length;i++)
+        if(elements[i].textContent.indexOf(enteredText)<0) 
+        {
+            elements[i].style.display = 'block';
+        } else {
+            elements[i].style.display = 'none';
+        }
+    }
+</script>
