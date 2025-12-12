@@ -97,6 +97,10 @@ body{
     cursor: pointer;
     margin-top: 10px;
 }
+
+#shopnow {
+    margin-top: 40px;
+}
 .header button:hover{
     background-color: #333;
 }
@@ -205,11 +209,35 @@ body{
     font-weight: 600;
 }
 
-.product-details p {
+.product-price {
     font-size: 20px;
     color: #1d232c;
     font-weight: 700;
     margin-bottom: 15px;
+}
+
+.product-info {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.product-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .product-buttons {
@@ -437,7 +465,7 @@ body{
         display: none;
     }
     .header h1 {
-        font-size: 40px;
+        font-size: 28px;
     }
     .header p {
         font-size: 20px;
@@ -525,5 +553,12 @@ body{
     .products {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+    .header h1 {
+        font-size: 36px;
+    }
+    .header img {
+        height: 600px;
+        width: 600px;
     }
 }
